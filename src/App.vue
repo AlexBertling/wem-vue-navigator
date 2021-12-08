@@ -1,18 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <TypeWatch />
-    <TypeWatch />
+    <Menu :items="items" orientation="horizontal"/>
+    <Menu :items="items" orientation="vertical"/>
   </div>
 </template>
 
 <script>
-import TypeWatch from './components/TypeWatch.vue'
+import Menu from "./components/Menu.vue"
 
 export default {
   name: 'App',
+  data: function(){
+    return {
+      items: ['test','test1','test2']
+    }
+  },
   components: {
-    TypeWatch
+    Menu
   }
 }
 </script>
