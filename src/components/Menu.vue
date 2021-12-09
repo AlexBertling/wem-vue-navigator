@@ -1,6 +1,6 @@
 <template>
     <nav :class="orientation">
-        <a href="" v-for="item in items" :key="item" @click.prevent="menuClick(item)">{{item}}</a>
+        <a href="" v-for="item in items" :key="item" @click.prevent="$emit('menuClick', item)">{{item}}</a>
     </nav>
     
 </template>
@@ -10,7 +10,7 @@ module.exports = {
   name: 'Menu',
   props: {
       orientation: { type: String, default: "horizontal"},
-      items: { type: Array }
+      items: { type: Array, default: () => [] }
   },
   methods: {
       menuClick: function(item) {

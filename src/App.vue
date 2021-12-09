@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Menu :items="items" orientation="horizontal"/>
-    <Menu :items="items" orientation="vertical"/>
+    <!--<img alt="Vue logo" src="./assets/logo.png">
+    <Header text="Header">
+      <Menu :items="items" orientation="horizontal"/>
+    </Header>
+    <Main styleMode="grid" />
+    <Footer :items="items" />-->
+    <Navigator dataUrl="navigator.json"/>
   </div>
 </template>
 
 <script>
-import Menu from "./components/Menu.vue"
+import Navigator from "./components/Navigator.vue"
 
 export default {
   name: 'App',
@@ -17,7 +21,7 @@ export default {
     }
   },
   components: {
-    Menu
+    Navigator
   }
 }
 </script>
