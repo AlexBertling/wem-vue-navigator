@@ -1,24 +1,11 @@
-# vue-navigator
+# Web Engineering Master Semesterprojekt
 
-## Project setup
-```
-npm install
-```
+## Vue Navigator
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4ac3166-c00b-4eda-b6ac-b8cb1ea5cffd/deploy-status)](https://app.netlify.com/sites/wem-vue-navigator/deploys)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Subrepository für das Semesterprojekt im Masterkurs "Web Engineering" im Wintersemester 2021.
 
-### Lints and fixes files
-```
-npm run lint
-```
+[Link zum Main-Repository](https://github.com/AlexBertling/web-engineering-semesterprojekt)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Diese Navigator-Version wurde mit [Vue](https://vuejs.org/) analog zur ursprünglichen Version nachgebaut. Der Navigator verwendet [Single-File-Komponenten](https://v2.vuejs.org/v2/guide/single-file-components.html), ist aber ohne Router oder State-Management implementiert.
